@@ -1,0 +1,23 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<form id="get_event">
+<input type='button' onclick="submitFrmAjax();" value="Change City" id="scsd">
+</form>
+
+<button class="vendor-link">dcdf</button>
+
+
+
+<a href="/otp_confrimation">xyz</a>
+
+<script>
+	function submitFrmAjax(){
+	 $.ajax({
+	    type:'POST', 
+	    url: 'https://hrms-finance.b91002.dev.us-east-1.aws.svc.builder.cafe/bx_block_login/login/login_otp_confirmation', 
+	    data: {"data": {"type": "email_otp", "token": "eyJhbGciOiJIUzUxMiJ9.eyJpZCI6NTUsImV4cCI6MTY2OTE5OTM1NCwidHlwZSI6IkFjY291bnRCbG9jazo6RW1haWxPdHAiLCJhY2NvdW50X2lkIjoxMjF9.Q7qRdu-AsWaI-ozd_-N0cu9o-6l2DttkYLWA1slrCWWp3LCE_bCszN5d2CSU24Zh_Xwy6kg7BRYI_gE-0OmfVw", "otp_code": "8212"}}
+	  });
+	}
+	
+</script>
