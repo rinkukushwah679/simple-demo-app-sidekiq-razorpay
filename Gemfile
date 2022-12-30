@@ -75,3 +75,7 @@ gem 'sass-rails'
 gem 'country_select'
 # gem 'country_state_select', '~> 3.0', '>= 3.0.1'
 gem 'faraday'
+
+gem 'sidekiq_alive'
+gem 'sidekiq', '~> 6.1.0'
+gem "sidekiq-cron"

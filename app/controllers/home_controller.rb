@@ -5,6 +5,7 @@ class HomeController < ApplicationController
 
 
   def index
+    # FirstWorker.perform_at(5.minutes.from_now)
   end
   def testing
 
@@ -37,7 +38,6 @@ class HomeController < ApplicationController
       params = {"data": {"type": "email_otp", "token": "eyJhbGciOiJIUzUxMiJ9.eyJpZCI6NTcsImV4cCI6MTY2OTIyMzU1MiwidHlwZSI6IkFjY291bnRCbG9jazo6RW1haWxPdHAiLCJhY2NvdW50X2lkIjoxMjF9.qeFTE5lTAPINO3n4uXw9mWgzvGrnr7ueH6jIFAVdHomSCE56-PM7XawhtqIE5lg7uVJdGvzmrzupjQOOadM3eA", "otp_code": "4784"}}
       req.body = params.to_json
     end
-    debugger
     @reponse = JSON.parse(@resp.body).merge("status" => @resp.status)
   end
 end
