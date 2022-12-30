@@ -79,3 +79,5 @@ gem 'faraday'
 gem 'sidekiq_alive'
 gem 'sidekiq', '~> 6.1.0'
 gem "sidekiq-cron"
+
+gem 'razorpay'
